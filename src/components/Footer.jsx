@@ -1,5 +1,7 @@
 import React from 'react';
-import { Share2, Linkedin, MessageCircle, Mail, Globe, ArrowUp } from 'lucide-react';
+import { Share2, Linkedin, Mail, Globe, ArrowUp } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -25,12 +27,12 @@ const Footer = () => {
                             Global expertise led by Dr. Krishnan Sampath.
                         </p>
                         <div className="flex gap-4">
-                            <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                            <a href="https://www.linkedin.com/in/krishsam/" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: '0.3s', textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'} onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}>
                                 <Linkedin size={18} />
-                            </div>
-                            <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-                                <Globe size={18} />
-                            </div>
+                            </a>
+                            <a href="https://wa.me/9840783021" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: '0.3s', textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'} onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}>
+                                <FontAwesomeIcon icon={faWhatsapp} size="lg" />
+                            </a>
                         </div>
                     </div>
 

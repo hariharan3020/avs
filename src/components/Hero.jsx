@@ -1,5 +1,7 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Mail } from 'lucide-react';
+import { Phone, MapPin, Mail } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import profileImg from '../assets/1768131924406.jpg';
 
 const Hero = () => {
@@ -24,9 +26,9 @@ const Hero = () => {
                                 <Phone size={24} />
                             </a>
                             <a href="https://wa.me/919840783021" className="contact-icon-btn">
-                                <MessageCircle size={24} />
+                                <FontAwesomeIcon icon={faWhatsapp} size="lg" style={{ fontSize: '24px' }} />
                             </a>
-                            <a href="#location" className="contact-icon-btn">
+                            <a href="https://maps.app.goo.gl/53SZat1jGhXUkwNF9" target="_blank" rel="noopener noreferrer" className="contact-icon-btn">
                                 <MapPin size={24} />
                             </a>
                             <a href="mailto:skrishphd@gmail.com" className="contact-icon-btn">
