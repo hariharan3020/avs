@@ -14,17 +14,18 @@ const Footer = () => {
         <footer style={{ background: '#0a1d37', color: 'white', position: 'relative' }}>
 
             {/* Main Footer Content */}
-            <div className="container" style={{ padding: '80px 0 40px 0' }}>
-                <div className="grid grid-3" style={{ gap: '60px' }}>
+            <div className="container" style={{ padding: '40px 0 20px 0' }}>
+                <div className="grid grid-3" style={{ gap: '40px', maxWidth: '1200px', margin: '0 auto' }}>
                     {/* Brand Info */}
                     <div>
-                        <div style={{ marginBottom: '25px' }}>
-                            <span style={{ fontSize: '1.8rem', fontWeight: '900', color: 'var(--primary-orange)' }}>AVS</span>
-                            <div style={{ fontSize: '0.7rem', letterSpacing: '2px', opacity: 0.8, textTransform: 'uppercase' }}>Business Management Consultants</div>
+                        <div style={{ marginBottom: '15px' }}>
+                            <span style={{ fontSize: '1.6rem', fontWeight: '900', color: 'var(--primary-orange)' }}>AVS</span>
+                            <div style={{ fontSize: '0.65rem', letterSpacing: '2px', opacity: 0.8, textTransform: 'uppercase' }}>Business Management Consultants</div>
+                            <div style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--gold)', marginTop: '4px', letterSpacing: '1px' }}>"THE BUSINESS DOCTOR"</div>
                         </div>
                         <p style={{ opacity: 0.7, lineHeight: '1.8', fontSize: '0.95rem', marginBottom: '30px' }}>
                             Transforming businesses with strategy, leadership & execution excellence.
-                            Global expertise led by Dr. Krishnan Sampath.
+                            Global expertise led by Prof (Dr) Krishnan Sampath.
                         </p>
                         <div className="flex gap-4">
                             <a href="https://www.linkedin.com/in/krishsam/" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: '0.3s', textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'} onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}>
@@ -38,11 +39,12 @@ const Footer = () => {
 
                     {/* Quick Access */}
                     <div>
-                        <h4 style={{ fontSize: '1.1rem', fontWeight: '800', marginBottom: '30px', color: 'var(--primary-orange)' }}>Quick Links</h4>
-                        <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                        <h4 style={{ fontSize: '1rem', fontWeight: '800', marginBottom: '20px', color: 'var(--primary-orange)' }}>Quick Links</h4>
+                        <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                             <li><a href="#" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Home</a></li>
                             <li><a href="#about" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>About Us</a></li>
                             <li><a href="#services" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Our Services</a></li>
+                            <li><a href="#media" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Media & Resources</a></li>
                             <li><a href="#payment" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Book Consultation</a></li>
                             <li><a href="#enquiry" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Contact</a></li>
                         </ul>
@@ -50,8 +52,8 @@ const Footer = () => {
 
                     {/* Insights Hub */}
                     <div>
-                        <h4 style={{ fontSize: '1.1rem', fontWeight: '800', marginBottom: '30px', color: 'var(--primary-orange)' }}>Business Insights</h4>
-                        <p style={{ opacity: 0.7, fontSize: '0.9rem', marginBottom: '20px', lineHeight: '1.6' }}>
+                        <h4 style={{ fontSize: '1rem', fontWeight: '800', marginBottom: '20px', color: 'var(--primary-orange)' }}>Business Insights</h4>
+                        <p style={{ opacity: 0.7, fontSize: '0.85rem', marginBottom: '15px', lineHeight: '1.5' }}>
                             Join our network for exclusive corporate insights and leadership strategies.
                         </p>
                         <div style={{ position: 'relative' }}>
@@ -90,8 +92,8 @@ const Footer = () => {
 
                 {/* Bottom Copyright */}
                 <div style={{
-                    marginTop: '80px',
-                    paddingTop: '30px',
+                    marginTop: '35px',
+                    paddingTop: '20px',
                     borderTop: '1px solid rgba(255,255,255,0.05)',
                     display: 'flex',
                     justifyContent: 'space-between',

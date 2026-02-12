@@ -8,6 +8,8 @@ import Testimonials from './components/Testimonials';
 import Enquiry from './components/Enquiry';
 import Footer from './components/Footer';
 
+import MediaAndPanels from './components/MediaAndPanels';
+
 function App() {
     useEffect(() => {
         const observerOptions = {
@@ -34,6 +36,7 @@ function App() {
                 <Hero />
                 <About />
                 <Services />
+                <MediaAndPanels />
                 <Payment />
                 <Testimonials />
                 <Enquiry />

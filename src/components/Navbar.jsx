@@ -41,59 +41,65 @@ const Navbar = () => {
         <nav style={navStyle}>
             <div className="container flex items-center justify-between">
                 {/* Logo Section */}
-                <div className="flex items-center gap-3 mobile-logo-container" style={{ flexShrink: 0 }}>
+                <div className="flex flex-col" style={{ flexShrink: 0 }}>
+                    <div className="flex items-center gap-3 mobile-logo-container">
+                        <div style={{
+                            backgroundColor: '#c08c0c',
+                            padding: '6px 14px',
+                            borderRadius: '4px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            minWidth: 'fit-content'
+                        }} className="mobile-logo-block">
+                            <span style={{
+                                color: '#0a1d37',
+                                fontWeight: '900',
+                                fontSize: '1.7rem',
+                                lineHeight: '1',
+                                letterSpacing: '-1px'
+                            }} className="mobile-logo-text">AVS</span>
+                        </div>
+                        <div className="flex flex-col justify-center" style={{ lineHeight: '1.1', minWidth: 'max-content' }}>
+                            <span style={{
+                                color: '#0a1d37',
+                                fontWeight: '900',
+                                fontSize: '1.3rem',
+                                fontFamily: 'Playfair Display, serif',
+                                letterSpacing: '0px'
+                            }} className="mobile-business-text">BUSINESS</span>
+                            <span style={{
+                                color: '#c08c0c',
+                                fontWeight: '800',
+                                fontSize: '0.75rem',
+                                letterSpacing: '2px'
+                            }} className="mobile-consultants-text">CONSULTANTS</span>
+                        </div>
+                    </div>
                     <div style={{
-                        backgroundColor: '#c08c0c',
-                        padding: '6px 14px',
-                        borderRadius: '4px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        minWidth: 'fit-content'
-                    }} className="mobile-logo-block">
-                        <span style={{
-                            color: '#0a1d37',
-                            fontWeight: '900',
-                            fontSize: '1.7rem',
-                            lineHeight: '1',
-                            letterSpacing: '-1px'
-                        }} className="mobile-logo-text">AVS</span>
-                    </div>
-                    <div className="flex flex-col justify-center" style={{ lineHeight: '1.1', minWidth: 'max-content' }}>
-                        <span style={{
-                            color: '#0a1d37',
-                            fontWeight: '900',
-                            fontSize: '1.3rem',
-                            fontFamily: 'Playfair Display, serif',
-                            letterSpacing: '0px'
-                        }} className="mobile-business-text">BUSINESS</span>
-                        <span style={{
-                            color: '#c08c0c',
-                            fontWeight: '800',
-                            fontSize: '0.75rem',
-                            letterSpacing: '2px'
-                        }} className="mobile-consultants-text">CONSULTANTS</span>
-                    </div>
+                        color: 'var(--primary-orange)',
+                        fontSize: '0.75rem',
+                        fontWeight: '900',
+                        letterSpacing: '2px',
+                        marginTop: '4px',
+                        textTransform: 'uppercase',
+                        textAlign: 'center',
+                        width: '100%',
+                        borderTop: '1px solid rgba(192, 140, 12, 0.2)',
+                        paddingTop: '2px'
+                    }}>The Business Doctor</div>
                 </div>
 
                 {/* Nav Links */}
                 <div className="hidden-mobile flex items-center gap-6 nav-links-wrapper">
-                    <a href="#" style={{ color: '#0a1d37', fontWeight: '800', fontSize: '0.95rem', textTransform: 'capitalize' }}>Home</a>
-                    <a href="#about" style={{ color: '#0a1d37', fontWeight: '800', fontSize: '0.95rem', textTransform: 'capitalize' }}>About Us</a>
-                    <a href="#services" style={{ color: '#0a1d37', fontWeight: '800', fontSize: '0.95rem', textTransform: 'capitalize' }}>Services</a>
-                    <a href="#payment" style={{ color: '#0a1d37', fontWeight: '800', fontSize: '0.95rem', textTransform: 'capitalize' }}>Payment</a>
-                    <a href="#feedback" style={{ color: '#0a1d37', fontWeight: '800', fontSize: '0.95rem', textTransform: 'capitalize' }}>Feedback</a>
-                    <a href="#enquiry" style={{ color: '#0a1d37', fontWeight: '800', fontSize: '0.95rem', textTransform: 'capitalize' }}>Enquiry</a>
-                    <a href="#enquiry" style={{
-                        backgroundColor: '#ff7300',
-                        color: 'white',
-                        padding: '12px 25px',
-                        borderRadius: '6px',
-                        fontWeight: '800',
-                        fontSize: '0.9rem',
-                        textDecoration: 'none',
-                        marginLeft: '10px'
-                    }}>GET FREE CONSULTANT</a>
+                    <a href="#">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#media">Media</a>
+                    <a href="#payment">Payment</a>
+                    <a href="#feedback">Feedback</a>
+                    <a href="#enquiry">Enquiry</a>
+                    <a href="#enquiry" className="nav-btn-orange" style={{ marginLeft: '10px' }}>GET FREE CONSULTANT</a>
                 </div>
                 <div className="mobile-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
@@ -103,6 +109,7 @@ const Navbar = () => {
                     <a href="#" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
                     <a href="#about" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>About Us</a>
                     <a href="#services" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
+                    <a href="#media" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>Media</a>
                     <a href="#payment" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>Payment</a>
                     <a href="#feedback" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>Feedback</a>
                     <a href="#enquiry" className="mobile-menu-link" onClick={() => setIsMobileMenuOpen(false)}>Enquiry</a>

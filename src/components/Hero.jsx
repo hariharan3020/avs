@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin, Mail } from 'lucide-react';
+import { Phone, MapPin, Mail, FileText } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import profileImg from '../assets/1768131924406.jpg';
@@ -11,35 +11,55 @@ const Hero = () => {
                 <div className="grid grid-2 items-center">
                     <div className="hero-content">
                         <p className="hero-tagline">AVS BUSINESS MANAGEMENT CONSULTANTS</p>
-                        <h1 className="hero-title">Dr. Krishnan Sampath</h1>
-                        <h2 className="hero-credentials">
+                        <h1 className="hero-title" style={{ fontSize: '3rem' }}>Prof (Dr) Krishnan Sampath</h1>
+                        <p style={{
+                            color: 'var(--gold)',
+                            fontSize: '1.1rem',
+                            fontWeight: '800',
+                            marginTop: '-8px',
+                            marginBottom: '15px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '3px'
+                        }}>"THE BUSINESS DOCTOR"</p>
+                        <h2 className="hero-credentials" style={{ fontSize: '1.2rem', marginBottom: '15px' }}>
                             PhD., MBA., MA., MPhil, SMP from IIMC, PGDMM
                         </h2>
-                        <p className="hero-description">
+                        <p className="hero-description" style={{ fontSize: '0.9rem', marginBottom: '25px', lineHeight: '1.5' }}>
                             (Professor of Practice, Writer, Author Business Coach, Mentor SME/Family Business,
                             Commercial Leadership Construction / CE Industry Life Fellow IIMM; Life Member AIMA & MMA,
                             Institute of Rail Transport, Institute of Supply Management Former Member MRICS, CILT)
                         </p>
 
                         <div className="floating-contact">
-                            <a href="tel:+919840783021" className="contact-icon-btn">
+                            <a href="tel:+919840783021" className="contact-icon-btn" title="Call Me">
                                 <Phone size={24} />
                             </a>
-                            <a href="https://wa.me/919840783021" className="contact-icon-btn">
+                            <a href="https://wa.me/919840783021" className="contact-icon-btn" title="WhatsApp">
                                 <FontAwesomeIcon icon={faWhatsapp} size="lg" style={{ fontSize: '24px' }} />
                             </a>
-                            <a href="https://maps.app.goo.gl/53SZat1jGhXUkwNF9" target="_blank" rel="noopener noreferrer" className="contact-icon-btn">
+                            <a href="mailto:skrishphd@gmail.com" className="contact-icon-btn" title="Email Me">
+                                <Mail size={24} />
+                            </a>
+                            <a href="https://maps.app.goo.gl/CqxrJtfhfAFz5UzR8" target="_blank" rel="noopener noreferrer" className="contact-icon-btn" title="Location">
                                 <MapPin size={24} />
                             </a>
-                            <a href="mailto:skrishphd@gmail.com" className="contact-icon-btn">
-                                <Mail size={24} />
+                            <a href="/Resume_KRISHNAN_SAMPATH.pdf" download="Prof_Dr_Krishnan_Sampath_CV.pdf" className="nav-btn-orange" style={{
+                                marginLeft: '10px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '10px',
+                                textTransform: 'uppercase',
+                                fontSize: '0.8rem',
+                                padding: '12px 25px'
+                            }}>
+                                <FileText size={18} /> DOWNLOAD CV
                             </a>
                         </div>
                     </div>
 
                     <div className="hero-image-container">
                         <div className="hero-image-circle">
-                            <img src={profileImg} alt="Dr. Krishnan Sampath" />
+                            <img src={profileImg} alt="Prof (Dr) Krishnan Sampath" />
                         </div>
                     </div>
                 </div>

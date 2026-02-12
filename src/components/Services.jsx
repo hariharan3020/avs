@@ -35,29 +35,28 @@ const serviceData = [
 
 const Services = () => {
     return (
-        <section id="services" style={{ padding: '80px 0', background: '#f8fbff' }}>
+        <section id="services" style={{ padding: '60px 0', background: '#f8fbff' }}>
             <div className="container">
                 {/* Header Section from Screenshot */}
-                <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '40px' }}>
                     <p style={{
                         color: 'var(--primary-orange)',
                         fontWeight: '800',
-                        fontSize: '1rem',
+                        fontSize: '0.9rem',
                         letterSpacing: '3px',
-                        marginBottom: '15px'
                     }}>
                         OUR EXPERTISE
                     </p>
-                    <h2 className="hero-title" style={{ fontSize: '3.6rem', marginBottom: '15px' }}>
+                    <h2 className="hero-title" style={{ fontSize: '2.1rem', marginBottom: '10px' }}>
                         Services
                     </h2>
-                    <div style={{ width: '60px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto 30px auto' }}></div>
+                    <div style={{ width: '60px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto 20px auto' }}></div>
                     <p style={{
                         color: '#666',
                         maxWidth: '850px',
                         margin: '0 auto',
-                        fontSize: '1.2rem',
-                        lineHeight: '1.7'
+                        fontSize: '1rem',
+                        lineHeight: '1.6'
                     }}>
                         Transforming complex business challenges into clear, actionable growth strategies through our diverse range
                         of specialized consulting services.

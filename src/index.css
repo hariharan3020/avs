@@ -38,7 +38,7 @@ h4,
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 
 /* Navbar */
@@ -73,16 +73,33 @@ nav {
 .nav-links-wrapper a {
     text-decoration: none;
     color: var(--dark-blue);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
     transition: var(--transition);
     white-space: nowrap;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links-wrapper a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-orange);
+    transition: width 0.3s ease;
 }
 
 .nav-links-wrapper a:hover {
     color: var(--primary-orange);
+}
+
+.nav-links-wrapper a:hover::after {
+    width: 100%;
 }
 
 /* Hero Section */
@@ -112,10 +129,10 @@ nav {
 }
 
 .hero-title {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-weight: 900;
     line-height: 1.1;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: var(--dark-blue);
 }
 
@@ -455,12 +472,30 @@ nav {
     font-weight: 800;
     color: var(--dark-blue);
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.mobile-menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-orange);
+    transition: width 0.3s ease;
 }
 
 .mobile-menu-link:hover {
     color: var(--primary-orange);
+}
+
+.mobile-menu-link:hover::after {
+    width: 100%;
 }
 
 .mobile-toggle {

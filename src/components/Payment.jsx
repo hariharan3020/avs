@@ -21,20 +21,20 @@ const Payment = () => {
         <section id="payment" style={{ padding: '60px 0', background: '#f8fbff' }}>
             <div className="container" style={{ textAlign: 'center' }}>
                 {/* Header Section */}
-                <div style={{ marginBottom: '40px' }}>
+                <div style={{ marginBottom: '30px' }}>
                     <p style={{
                         color: 'var(--primary-orange)',
                         fontWeight: '800',
-                        fontSize: '1rem',
+                        fontSize: '0.9rem',
                         letterSpacing: '3px',
-                        marginBottom: '15px'
+                        marginBottom: '10px'
                     }}>
                         SECURE TRANSACTION
                     </p>
-                    <h2 className="hero-title" style={{ fontSize: '2.4rem', marginBottom: '10px' }}>
+                    <h2 className="hero-title" style={{ fontSize: '2.1rem', marginBottom: '10px' }}>
                         Payment Information
                     </h2>
-                    <div style={{ width: '80px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto 30px auto' }}></div>
+                    <div style={{ width: '60px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto 20px auto' }}></div>
                     <p style={{
                         color: '#666',
                         maxWidth: '700px',
@@ -42,8 +42,6 @@ const Payment = () => {
                         fontSize: '1rem',
                         lineHeight: '1.5'
                     }}>
-                        Professional consulting services deserve a seamless and secure payment experience.
-                        Please use the mobile numbers below for instant payment.
                     </p>
                 </div>
 
@@ -53,14 +51,14 @@ const Payment = () => {
                     margin: '0 auto',
                     background: '#fff',
                     borderRadius: '20px',
-                    padding: '35px 40px',
+                    padding: '30px 35px',
                     boxShadow: '0 30px 70px rgba(0,0,0,0.04)',
                     textAlign: 'left'
                 }}>
-                    <div className="flex items-center gap-6" style={{ marginBottom: '30px', flexWrap: 'wrap' }}>
+                    <div className="flex items-center gap-6" style={{ marginBottom: '25px', flexWrap: 'wrap' }}>
                         <div style={{
-                            width: '54px',
-                            height: '54px',
+                            width: '48px',
+                            height: '48px',
                             background: 'linear-gradient(135deg, #ff7300, #ff9100)',
                             borderRadius: '12px',
                             display: 'flex',
@@ -68,11 +66,11 @@ const Payment = () => {
                             justifyContent: 'center',
                             boxShadow: '0 10px 20px rgba(255, 115, 0, 0.2)'
                         }}>
-                            <Smartphone color="white" size={28} />
+                            <Smartphone color="white" size={24} />
                         </div>
                         <div>
-                            <h3 className="hero-title" style={{ fontSize: '1.8rem', marginBottom: '5px' }}>App Payments</h3>
-                            <p style={{ color: '#888', fontSize: '1rem', fontWeight: '500' }}>Pay via GPay, PhonePe, or Paytm</p>
+                            <h3 className="hero-title" style={{ fontSize: '1.5rem', marginBottom: '4px' }}>App Payments</h3>
+                            <p style={{ color: '#888', fontSize: '0.9rem', fontWeight: '500' }}>Pay via GPay, PhonePe, or Paytm</p>
                         </div>
                     </div>
 
@@ -82,7 +80,7 @@ const Payment = () => {
                                 background: 'rgba(255, 115, 0, 0.03)',
                                 border: '1px solid rgba(255, 115, 0, 0.1)',
                                 borderRadius: '15px',
-                                padding: '15px 25px',
+                                padding: '12px 20px',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'space-between',
@@ -92,23 +90,23 @@ const Payment = () => {
                             }}>
                                 <div className="flex items-center gap-4">
                                     <div style={{
-                                        width: '40px',
-                                        height: '40px',
+                                        width: '36px',
+                                        height: '36px',
                                         background: 'white',
-                                        borderRadius: '10px',
+                                        borderRadius: '8px',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
                                         fontWeight: '900',
-                                        fontSize: '0.65rem',
+                                        fontSize: '0.6rem',
                                         color: method.color
                                     }}>
                                         {method.name.split(' ')[0]}
                                     </div>
                                     <div>
                                         <p style={{
-                                            fontSize: '0.85rem',
+                                            fontSize: '0.8rem',
                                             fontWeight: '800',
                                             color: 'var(--primary-orange)',
                                             margin: 0,
@@ -117,7 +115,7 @@ const Payment = () => {
                                             {method.name}
                                         </p>
                                         <p style={{
-                                            fontSize: '1.3rem',
+                                            fontSize: '1.2rem',
                                             fontWeight: '900',
                                             color: 'var(--dark-blue)',
                                             margin: 0
@@ -132,8 +130,8 @@ const Payment = () => {
                                     style={{
                                         background: 'white',
                                         border: 'none',
-                                        width: '45px',
-                                        height: '45px',
+                                        width: '40px',
+                                        height: '40px',
                                         borderRadius: '10px',
                                         display: 'flex',
                                         alignItems: 'center',
@@ -144,7 +142,7 @@ const Payment = () => {
                                         transition: '0.3s'
                                     }}
                                 >
-                                    {copied === method.id ? <Check size={20} /> : <Copy size={20} />}
+                                    {copied === method.id ? <Check size={18} /> : <Copy size={18} />}
                                 </button>
                             </div>
                         ))}
