@@ -35,10 +35,10 @@ const serviceData = [
 
 const Services = () => {
     return (
-        <section id="services" style={{ padding: '60px 0', background: '#f8fbff' }}>
+        <section id="services" style={{ padding: '40px 0', background: '#f8fbff' }}>
             <div className="container">
                 {/* Header Section from Screenshot */}
-                <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '25px' }}>
                     <p style={{
                         color: 'var(--primary-orange)',
                         fontWeight: '800',

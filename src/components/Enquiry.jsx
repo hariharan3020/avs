@@ -3,10 +3,10 @@ import { Send } from 'lucide-react';
 
 const Enquiry = () => {
     return (
-        <section id="enquiry" style={{ padding: 'clamp(40px, 8vw, 50px) 0', background: '#f8fbff' }}>
+        <section id="enquiry" style={{ padding: 'clamp(30px, 6vw, 40px) 0', background: '#f8fbff' }}>
             <div className="container">
                 {/* Section Header */}
-                <div style={{ textAlign: 'center', marginBottom: 'clamp(25px, 5vw, 30px)' }}>
+                <div style={{ textAlign: 'center', marginBottom: 'clamp(15px, 3vw, 20px)' }}>
                     <h2 className="hero-title" style={{
                         fontSize: 'clamp(1.5rem, 4vw, 2rem)',
                         color: 'var(--dark-blue)',

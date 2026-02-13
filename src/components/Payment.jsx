@@ -18,10 +18,10 @@ const Payment = () => {
     ];
 
     return (
-        <section id="payment" style={{ padding: '60px 0', background: '#f8fbff' }}>
+        <section id="payment" style={{ padding: '40px 0', background: '#f8fbff' }}>
             <div className="container" style={{ textAlign: 'center' }}>
                 {/* Header Section */}
-                <div style={{ marginBottom: '30px' }}>
+                <div style={{ marginBottom: '20px' }}>
                     <p style={{
                         color: 'var(--primary-orange)',
                         fontWeight: '800',

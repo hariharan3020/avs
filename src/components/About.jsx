@@ -106,7 +106,7 @@ const About = () => {
     ];
 
     return (
-        <section id="about" style={{ padding: '60px 0', background: '#f8fbff' }}>
+        <section id="about" style={{ padding: '40px 0', background: '#f8fbff' }}>
             <div className="container" style={{ textAlign: 'center' }}>
                 {/* Section Heading */}
                 <h2 className="hero-title" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '10px', textTransform: 'uppercase' }}>
@@ -121,7 +121,7 @@ const About = () => {
                     fontSize: 'clamp(0.85rem, 2.5vw, 1.1rem)',
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
-                    marginBottom: '40px'
+                    marginBottom: '25px'
                 }}>
                     Nature of Business: Consultancy Services
                 </p>
@@ -129,7 +129,7 @@ const About = () => {
                 {/* Main Card */}
                 <div className="reveal active" style={{
                     maxWidth: '1200px',
-                    margin: '0 auto 60px auto',
+                    margin: '0 auto 40px auto',
                     background: '#fff',
                     borderRadius: '20px',
                     boxShadow: '0 20px 40px rgba(0,0,0,0.05)',
@@ -196,10 +196,10 @@ const About = () => {
                     marginTop: '60px',
                     textAlign: 'left',
                     maxWidth: '1200px',
-                    margin: '60px auto 0 auto',
+                    margin: '40px auto 0 auto',
                     padding: '0 20px'
                 }}>
-                    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '25px' }}>
                         <h3 className="hero-title" style={{ fontSize: 'clamp(1.6rem, 4.5vw, 2.4rem)', color: 'var(--dark-blue)', marginBottom: '8px' }}>
                             A Journey of a Soldier
                         </h3>
@@ -235,7 +235,7 @@ const About = () => {
                     </div>
 
                     {/* LinkedIn Style Insights Section */}
-                    <div style={{ marginTop: '60px', textAlign: 'center' }}>
+                    <div style={{ marginTop: '40px', textAlign: 'center' }}>
                         <h3 className="hero-title" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', marginBottom: '30px' }}>LinkedIn Post</h3>
                         <div className="grid grid-3" style={{ gap: '30px' }}>
                             {/* AI Post */}
@@ -402,7 +402,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div style={{ background: 'var(--dark-blue)', color: 'white', padding: 'clamp(25px, 5vw, 35px) clamp(20px, 5vw, 30px)', borderRadius: '30px', marginTop: '45px', position: 'relative', overflow: 'hidden' }}>
+                    <div style={{ background: 'var(--dark-blue)', color: 'white', padding: 'clamp(25px, 5vw, 35px) clamp(20px, 5vw, 30px)', borderRadius: '30px', marginTop: '30px', position: 'relative', overflow: 'hidden' }}>
                         <div className="grid grid-2" style={{ gap: '30px' }}>
                             <div>
                                 <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: 'clamp(0.85rem, 2.2vw, 1rem)' }}>THE ENTREPRENEURIAL REALITY</h4>
@@ -463,7 +463,7 @@ const About = () => {
                 </div>
 
                 {/* Service Excellence Section */}
-                <div style={{ marginTop: '60px' }}>
+                <div style={{ marginTop: '40px' }}>
                     <h3 className="hero-title" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', marginBottom: '40px' }}>
                         Our Service Excellence
                     </h3>
@@ -525,7 +525,7 @@ const About = () => {
 
                 {/* CTA Banner */}
                 <div className="reveal active" style={{
-                    marginTop: '60px',
+                    marginTop: '40px',
                     background: 'var(--dark-blue)',
                     borderRadius: '25px',
                     padding: 'clamp(30px, 6vw, 45px) clamp(20px, 5vw, 30px)',

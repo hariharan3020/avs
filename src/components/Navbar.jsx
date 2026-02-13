@@ -39,40 +39,43 @@ const Navbar = () => {
 
     return (
         <nav style={navStyle}>
-            <div className="container flex items-center justify-between">
+            <div className="container flex items-center justify-between" style={{ flexWrap: 'nowrap' }}>
                 {/* Logo Section */}
-                <div className="flex flex-col" style={{ flexShrink: 0 }}>
+                <div className="flex flex-col" style={{ flexShrink: 1, minWidth: 0, overflow: 'hidden' }}>
                     <div className="flex items-center gap-3 mobile-logo-container">
                         <div style={{
                             backgroundColor: '#c08c0c',
-                            padding: '6px 14px',
+                            padding: '4px 10px',
                             borderRadius: '4px',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            minWidth: 'fit-content'
+                            flexShrink: 0
                         }} className="mobile-logo-block">
                             <span style={{
                                 color: '#0a1d37',
                                 fontWeight: '900',
-                                fontSize: '1.7rem',
+                                fontSize: 'clamp(1.2rem, 4vw, 1.7rem)',
                                 lineHeight: '1',
                                 letterSpacing: '-1px'
                             }} className="mobile-logo-text">AVS</span>
                         </div>
-                        <div className="flex flex-col justify-center" style={{ lineHeight: '1.1', minWidth: 'max-content' }}>
+                        <div className="flex flex-col justify-center" style={{ lineHeight: '1.1', minWidth: 0, overflow: 'hidden' }}>
                             <span style={{
                                 color: '#0a1d37',
                                 fontWeight: '900',
-                                fontSize: '1.3rem',
+                                fontSize: 'clamp(0.9rem, 3vw, 1.3rem)',
                                 fontFamily: 'Playfair Display, serif',
-                                letterSpacing: '0px'
+                                letterSpacing: '0px',
+                                whiteSpace: 'nowrap',
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis'
                             }} className="mobile-business-text">BUSINESS</span>
                             <span style={{
                                 color: '#c08c0c',
                                 fontWeight: '800',
-                                fontSize: '0.75rem',
-                                letterSpacing: '2px'
+                                fontSize: 'clamp(0.5rem, 2vw, 0.75rem)',
+                                letterSpacing: '1px'
                             }} className="mobile-consultants-text">CONSULTANTS</span>
                         </div>
                     </div>

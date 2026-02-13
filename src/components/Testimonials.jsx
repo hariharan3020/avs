@@ -6,10 +6,10 @@ const Testimonials = () => {
     const [hover, setHover] = useState(0);
 
     return (
-        <section id="feedback" style={{ padding: '60px 0', background: '#222' }}>
+        <section id="feedback" style={{ padding: '40px 0', background: '#222' }}>
             <div className="container">
                 {/* Section Header */}
-                <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '25px' }}>
                     <h2 className="hero-title" style={{
                         fontSize: '2.1rem',
                         color: 'white',

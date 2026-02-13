@@ -67,10 +67,10 @@ const MediaAndPanels = () => {
     ];
 
     return (
-        <section id="media" style={{ padding: '60px 0', background: '#ffffff' }}>
+        <section id="media" style={{ padding: '40px 0', background: '#ffffff' }}>
             <div className="container">
                 {/* Media Section */}
-                <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '25px' }}>
                     <p style={{
                         color: 'var(--primary-orange)',
                         fontWeight: '800',
@@ -85,7 +85,7 @@ const MediaAndPanels = () => {
                     </h2>
                     <div style={{ width: '60px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto 25px auto' }}></div>
 
-                    <div className="grid grid-3" style={{ gap: '25px', marginTop: '30px' }}>
+                    <div className="grid grid-3" style={{ gap: '25px', marginTop: '20px' }}>
                         {mediaItems.map((item, index) => (
                             item.link ? (
                                 <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className="reveal active" style={{
@@ -172,7 +172,7 @@ const MediaAndPanels = () => {
                     </div>
 
                     {/* Enhanced Publications List */}
-                    <div style={{ marginTop: '40px', textAlign: 'left', background: '#eff4f8', padding: '30px', borderRadius: '25px' }}>
+                    <div style={{ marginTop: '25px', textAlign: 'left', background: '#eff4f8', padding: '30px', borderRadius: '25px' }}>
                         <h4 style={{ marginBottom: '20px', color: 'var(--dark-blue)', fontSize: '1.4rem', display: 'flex', alignItems: 'center', gap: '15px' }}>
                             <FileText style={{ color: 'var(--primary-orange)' }} size={24} /> Publications & Featured Articles
                         </h4>
@@ -257,7 +257,7 @@ const MediaAndPanels = () => {
                 </div>
 
                 {/* Professional Memberships Section */}
-                <div style={{ marginTop: '30px', textAlign: 'center' }}>
+                <div style={{ marginTop: '25px', textAlign: 'center' }}>
                     <p style={{
                         color: 'var(--primary-orange)',
                         fontWeight: '800',
