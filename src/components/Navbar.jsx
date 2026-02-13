@@ -34,11 +34,13 @@ const Navbar = () => {
         padding: '12px 0',
         background: isScrolled ? 'rgba(255, 255, 255, 0.98)' : '#eff4f8',
         boxShadow: isScrolled ? '0 4px 15px rgba(0,0,0,0.05)' : 'none',
-        transition: 'all 0.4s ease'
+        transition: 'background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease, transform 0.4s ease',
+        transform: 'translate3d(0, 0, 0)',
+        willChange: 'background-color, box-shadow'
     };
 
     return (
-        <nav style={navStyle}>
+        <nav style={navStyle} className={isScrolled ? 'scrolled' : ''}>
             <div className="container flex items-center justify-between" style={{ flexWrap: 'nowrap' }}>
                 {/* Logo Section */}
                 <div className="flex flex-col" style={{ flexShrink: 1, minWidth: 0, overflow: 'hidden' }}>

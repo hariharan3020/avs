@@ -21,7 +21,7 @@ const Hero = () => {
                             color: 'var(--gold)',
                             fontSize: 'clamp(0.85rem, 2.5vw, 1.1rem)',
                             fontWeight: '800',
-                            marginTop: '-10px',
+                            marginTop: '-5px',
                             marginBottom: '10px',
                             textTransform: 'uppercase',
                             letterSpacing: 'clamp(1px, 0.5vw, 3px)'
