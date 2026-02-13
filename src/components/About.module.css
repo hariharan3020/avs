@@ -1,0 +1,135 @@
+/* About Component Mobile Responsive Styles */
+
+.linkedinPostCard {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkedinPostCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.postImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.postContent {
+    padding: 25px;
+    flex: 1;
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+}
+
+.authorName {
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.postSubtitle {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #888;
+}
+
+.postTitle {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.postDescription {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .postImage {
+        height: 150px;
+    }
+
+    .postContent {
+        padding: 18px;
+    }
+
+    .authorInfo {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+
+    .authorName {
+        font-size: 0.85rem;
+    }
+
+    .postSubtitle {
+        font-size: 0.65rem;
+    }
+
+    .postTitle {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+
+    .postDescription {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .postImage {
+        height: 120px;
+    }
+
+    .postContent {
+        padding: 15px;
+    }
+
+    .authorName {
+        font-size: 0.8rem;
+    }
+
+    .postTitle {
+        font-size: 0.8rem;
+    }
+
+    .postDescription {
+        font-size: 0.75rem;
+    }
+}

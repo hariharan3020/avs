@@ -10,21 +10,21 @@ const Hero = () => {
             <div className="container">
                 <div className="grid grid-2 items-center">
                     <div className="hero-content">
-                        <p className="hero-tagline">AVS BUSINESS MANAGEMENT CONSULTANTS</p>
-                        <h1 className="hero-title" style={{ fontSize: '3rem' }}>Prof (Dr) Krishnan Sampath</h1>
+                        <p className="hero-tagline" style={{ fontSize: 'clamp(0.7rem, 2vw, 0.9rem)' }}>AVS BUSINESS MANAGEMENT CONSULTANTS</p>
+                        <h1 className="hero-title" style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)' }}>Prof (Dr) Krishnan Sampath</h1>
                         <p style={{
                             color: 'var(--gold)',
-                            fontSize: '1.1rem',
+                            fontSize: 'clamp(0.85rem, 2.5vw, 1.1rem)',
                             fontWeight: '800',
                             marginTop: '-8px',
                             marginBottom: '15px',
                             textTransform: 'uppercase',
-                            letterSpacing: '3px'
+                            letterSpacing: 'clamp(1px, 0.5vw, 3px)'
                         }}>"THE BUSINESS DOCTOR"</p>
-                        <h2 className="hero-credentials" style={{ fontSize: '1.2rem', marginBottom: '15px' }}>
+                        <h2 className="hero-credentials" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.2rem)', marginBottom: '15px' }}>
                             PhD., MBA., MA., MPhil, SMP from IIMC, PGDMM
                         </h2>
-                        <p className="hero-description" style={{ fontSize: '0.9rem', marginBottom: '25px', lineHeight: '1.5' }}>
+                        <p className="hero-description" style={{ fontSize: 'clamp(0.8rem, 2vw, 0.9rem)', marginBottom: '25px', lineHeight: '1.5' }}>
                             (Professor of Practice, Writer, Author Business Coach, Mentor SME/Family Business,
                             Commercial Leadership Construction / CE Industry Life Fellow IIMM; Life Member AIMA & MMA,
                             Institute of Rail Transport, Institute of Supply Management Former Member MRICS, CILT)
@@ -44,13 +44,13 @@ const Hero = () => {
                                 <MapPin size={24} />
                             </a>
                             <a href="/Resume_KRISHNAN_SAMPATH.pdf" download="Prof_Dr_Krishnan_Sampath_CV.pdf" className="nav-btn-orange" style={{
-                                marginLeft: '10px',
+                                marginLeft: 'clamp(0px, 2vw, 10px)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: '10px',
                                 textTransform: 'uppercase',
-                                fontSize: '0.8rem',
-                                padding: '12px 25px'
+                                fontSize: 'clamp(0.7rem, 1.8vw, 0.8rem)',
+                                padding: 'clamp(10px, 2.5vw, 12px) clamp(18px, 4vw, 25px)'
                             }}>
                                 <FileText size={18} /> DOWNLOAD CV
                             </a>

@@ -427,6 +427,28 @@ nav {
     footer .flex.gap-4 {
         justify-content: center;
     }
+
+    /* Hero Contact Buttons Mobile */
+    .floating-contact {
+        flex-wrap: wrap;
+        gap: 12px !important;
+    }
+
+    .contact-icon-btn {
+        width: 52px !important;
+        height: 52px !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .floating-contact {
+        justify-content: center;
+    }
+
+    .contact-icon-btn {
+        width: 48px !important;
+        height: 48px !important;
+    }
 }
 
 @media (max-width: 480px) {

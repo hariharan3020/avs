@@ -109,7 +109,7 @@ const About = () => {
         <section id="about" style={{ padding: '60px 0', background: '#f8fbff' }}>
             <div className="container" style={{ textAlign: 'center' }}>
                 {/* Section Heading */}
-                <h2 className="hero-title" style={{ fontSize: '3rem', marginBottom: '10px', textTransform: 'uppercase' }}>
+                <h2 className="hero-title" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '10px', textTransform: 'uppercase' }}>
                     About Us
                 </h2>
                 <div style={{ width: '60px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto 15px auto' }}></div>
@@ -118,7 +118,7 @@ const About = () => {
                 <p style={{
                     color: 'var(--primary-orange)',
                     fontWeight: '800',
-                    fontSize: '1.1rem',
+                    fontSize: 'clamp(0.85rem, 2.5vw, 1.1rem)',
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
                     marginBottom: '40px'
@@ -133,14 +133,14 @@ const About = () => {
                     background: '#fff',
                     borderRadius: '20px',
                     boxShadow: '0 20px 40px rgba(0,0,0,0.05)',
-                    padding: '40px 45px',
+                    padding: 'clamp(25px, 5vw, 40px) clamp(20px, 5vw, 45px)',
                     position: 'relative',
                     borderTop: '6px solid var(--primary-orange)',
                     textAlign: 'left'
                 }}>
                     <div className="grid grid-2" style={{ gap: '30px', alignItems: 'center' }}>
                         <div>
-                            <h3 className="hero-title" style={{ fontSize: '2rem', marginBottom: '8px' }}>
+                            <h3 className="hero-title" style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)', marginBottom: '8px' }}>
                                 AVS BUSINESS MANAGEMENT CONSULTANTS
                             </h3>
                             <div style={{
@@ -200,7 +200,7 @@ const About = () => {
                     padding: '0 20px'
                 }}>
                     <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                        <h3 className="hero-title" style={{ fontSize: '2.4rem', color: 'var(--dark-blue)', marginBottom: '8px' }}>
+                        <h3 className="hero-title" style={{ fontSize: 'clamp(1.6rem, 4.5vw, 2.4rem)', color: 'var(--dark-blue)', marginBottom: '8px' }}>
                             A Journey of a Soldier
                         </h3>
                         <p style={{ color: 'var(--primary-orange)', fontWeight: '800', fontSize: '0.9rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
@@ -210,25 +210,25 @@ const About = () => {
                     </div>
 
                     <div className="grid grid-2" style={{ gap: '30px' }}>
-                        <div style={{ background: '#fff', padding: '30px', borderRadius: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-                            <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: '0.9rem' }}>MY AIRFORCE CAREER</h4>
-                            <p style={{ color: '#444', lineHeight: '1.7', fontStyle: 'italic', marginBottom: '15px', fontSize: '0.95rem' }}>
+                        <div style={{ background: '#fff', padding: 'clamp(20px, 4vw, 30px)', borderRadius: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+                            <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: 'clamp(0.8rem, 2vw, 0.9rem)' }}>MY AIRFORCE CAREER</h4>
+                            <p style={{ color: '#444', lineHeight: '1.7', fontStyle: 'italic', marginBottom: '15px', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>
                                 "Some journeys begin with ambition. Mine began with duty. At eighteen, I wore a uniform. Not knowing where life would take me. Only knowing that service came first."
                             </p>
-                            <p style={{ color: '#555', lineHeight: '1.7', marginBottom: '15px', fontSize: '0.95rem' }}>
+                            <p style={{ color: '#555', lineHeight: '1.7', marginBottom: '15px', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>
                                 I spent sixteen years in the <strong>Indian Air Force</strong>. As an airman, a logistician—worked with stores, inventory, audits, and procurement—the unseen work that keeps everything else moving.
                             </p>
-                            <p style={{ color: '#555', lineHeight: '1.7', fontSize: '0.95rem' }}>
+                            <p style={{ color: '#555', lineHeight: '1.7', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>
                                 The Air Force shaped how I think. <strong>Be precise. Be accountable. Do the job — even when no one is watching.</strong>
                             </p>
                         </div>
 
-                        <div style={{ background: '#fff', padding: '30px', borderRadius: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-                            <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: '0.9rem' }}>THE TRANSITION & BUILDING SCALE</h4>
-                            <p style={{ color: '#555', lineHeight: '1.7', marginBottom: '15px', fontSize: '0.95rem' }}>
+                        <div style={{ background: '#fff', padding: 'clamp(20px, 4vw, 30px)', borderRadius: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+                            <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: 'clamp(0.8rem, 2vw, 0.9rem)' }}>THE TRANSITION & BUILDING SCALE</h4>
+                            <p style={{ color: '#555', lineHeight: '1.7', marginBottom: '15px', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>
                                 Civilian life—no ranks to rely on. I began in stores at Axles India, then TVS Logistics. Construction changed my perspective. At <strong>Leighton Contractors, M+W, L&W, E&T, Mtandt, and Swastik</strong>... the stakes grew larger, but responsibility mattered more than numbers.
                             </p>
-                            <p style={{ color: '#555', lineHeight: '1.7', fontSize: '0.95rem' }}>
+                            <p style={{ color: '#555', lineHeight: '1.7', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)' }}>
                                 Procurement was no longer just about materials. It was about trust, judgement, and decisions that shaped outcomes. <strong>The uniform changed. The purpose did not.</strong>
                             </p>
                         </div>
@@ -236,7 +236,7 @@ const About = () => {
 
                     {/* LinkedIn Style Insights Section */}
                     <div style={{ marginTop: '60px', textAlign: 'center' }}>
-                        <h3 className="hero-title" style={{ fontSize: '2.2rem', marginBottom: '30px' }}>LinkedIn Post</h3>
+                        <h3 className="hero-title" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', marginBottom: '30px' }}>LinkedIn Post</h3>
                         <div className="grid grid-3" style={{ gap: '30px' }}>
                             {/* AI Post */}
                             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7425377584265428993/?originTrackingId=MTZ2Qmu85j%2FiQXKIB2r2Ew%3D%3D"
@@ -261,7 +261,7 @@ const About = () => {
                                     e.currentTarget.style.transform = 'translateY(0)';
                                     e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
                                 }}>
-                                <img src="/src/assets/post.jpg" alt="AI Reflection" style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
+                                <img src="/src/assets/post.png" alt="AI Reflection" style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
                                 <div style={{ padding: '25px', flex: 1 }}>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '15px' }}>
                                         <div style={{ width: '35px', height: '35px', borderRadius: '50%', background: 'var(--primary-orange)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: '800' }}>K</div>
@@ -402,17 +402,17 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div style={{ background: 'var(--dark-blue)', color: 'white', padding: '35px 30px', borderRadius: '30px', marginTop: '45px', position: 'relative', overflow: 'hidden' }}>
+                    <div style={{ background: 'var(--dark-blue)', color: 'white', padding: 'clamp(25px, 5vw, 35px) clamp(20px, 5vw, 30px)', borderRadius: '30px', marginTop: '45px', position: 'relative', overflow: 'hidden' }}>
                         <div className="grid grid-2" style={{ gap: '30px' }}>
                             <div>
-                                <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: '1rem' }}>THE ENTREPRENEURIAL REALITY</h4>
-                                <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.6', marginBottom: '0', fontSize: '0.9rem' }}>
+                                <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: 'clamp(0.85rem, 2.2vw, 1rem)' }}>THE ENTREPRENEURIAL REALITY</h4>
+                                <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.6', marginBottom: '0', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)' }}>
                                     Along the way, I attempted eleven startups. <strong>None of them worked.</strong> But failure has a way of teaching what success never can—humility, sharpens judgement, and strengthens character.
                                 </p>
                             </div>
                             <div>
-                                <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: '1rem' }}>TODAY</h4>
-                                <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.6', fontSize: '0.9rem' }}>
+                                <h4 style={{ color: 'var(--primary-orange)', marginBottom: '15px', fontWeight: '800', fontSize: 'clamp(0.85rem, 2.2vw, 1rem)' }}>TODAY</h4>
+                                <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.6', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)' }}>
                                     Today, I don't measure life by designations. I have been an airman, a logistics professional, a corporate leader, and an entrepreneur. <strong>Each phase added something. None of them were wasted.</strong>
                                 </p>
                             </div>
@@ -464,7 +464,7 @@ const About = () => {
 
                 {/* Service Excellence Section */}
                 <div style={{ marginTop: '60px' }}>
-                    <h3 className="hero-title" style={{ fontSize: '2.1rem', marginBottom: '40px' }}>
+                    <h3 className="hero-title" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', marginBottom: '40px' }}>
                         Our Service Excellence
                     </h3>
 
@@ -528,7 +528,7 @@ const About = () => {
                     marginTop: '60px',
                     background: 'var(--dark-blue)',
                     borderRadius: '25px',
-                    padding: '45px 30px',
+                    padding: 'clamp(30px, 6vw, 45px) clamp(20px, 5vw, 30px)',
                     textAlign: 'center',
                     boxShadow: '0 20px 50px rgba(10, 29, 55, 0.2)'
                 }}>
