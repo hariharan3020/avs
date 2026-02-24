@@ -17,7 +17,7 @@ const Testimonials = () => {
                         marginBottom: '10px',
                         letterSpacing: '2px'
                     }}>
-                        Feedbacks
+                        Feedback
                     </h2>
                     <div style={{ width: '60px', height: '4px', background: 'var(--primary-orange)', margin: '0 auto' }}></div>
                 </div>

@@ -1,110 +1,10 @@
 import React from 'react';
 import {
-    Users, RefreshCw, Lightbulb, CheckCircle2,
-    Target, Share2, GraduationCap, Building2,
-    Globe, Truck, Camera, Plane, Mic
+    CheckCircle2
 } from 'lucide-react';
 import AIImage from '../assets/ai-image.jpg';
 
 const About = () => {
-    const serviceExcellence = [
-        {
-            icon: <Users size={24} />,
-            title: "Business Consulting & Mentorship",
-            features: [
-                "Personalized coaching and strategic guidance for entrepreneurs and businesses.",
-                "Leadership development and corporate mentorship for long-term growth."
-            ]
-        },
-        {
-            icon: <RefreshCw size={24} />,
-            title: "Organization Transformation & Resources Realignment",
-            features: [
-                "Restructuring for maximum efficiency and profitability.",
-                "Workforce and operational realignment for peak performance."
-            ]
-        },
-        {
-            icon: <Lightbulb size={24} />,
-            title: "New Business Development & Private Equity",
-            features: [
-                "Identifying new business opportunities and investment avenues.",
-                "Private equity and venture capital advisory for funding and expansion."
-            ]
-        },
-        {
-            icon: <Target size={24} />,
-            title: "Fund Raising & CxO Placement",
-            features: [
-                "Connecting businesses with the right investors.",
-                "Executive search and leadership hiring for top management roles."
-            ]
-        },
-        {
-            icon: <Share2 size={24} />,
-            title: "Digital Marketing & Content Creation",
-            features: [
-                "High-impact digital marketing strategies for brand visibility.",
-                "Engaging content creation for social media, blogs, and websites."
-            ]
-        },
-        {
-            icon: <GraduationCap size={24} />,
-            title: "Training as a Business",
-            features: [
-                "Corporate training programs and skill development workshops.",
-                "Specialized training for leadership, business growth, and industry insights."
-            ]
-        },
-        {
-            icon: <Building2 size={24} />,
-            title: "Construction Business Opportunities & PMC Services",
-            features: [
-                "Connecting businesses with lucrative construction projects.",
-                "Project Management Consultancy (PMC) services for seamless execution."
-            ]
-        },
-        {
-            icon: <Globe size={24} />,
-            title: "Sourcing from China & Strategic Sourcing",
-            features: [
-                "Expert guidance on sourcing high-quality products from China.",
-                "Cost-effective strategic sourcing for various industries."
-            ]
-        },
-        {
-            icon: <Truck size={24} />,
-            title: "Logistics Services & EXIM Trade Disputes Management",
-            features: [
-                "End-to-end logistics solutions for smooth operations.",
-                "Resolving trade disputes and ensuring hassle-free import/export transactions."
-            ]
-        },
-        {
-            icon: <Camera size={24} />,
-            title: "Divine Event Management & Photo/Video Services",
-            features: [
-                "Organizing spiritual and divine events with perfection.",
-                "Professional photography and videography services for all occasions."
-            ]
-        },
-        {
-            icon: <Plane size={24} />,
-            title: "Airport-to-Airport Spiritual Services",
-            features: [
-                "Exclusive spiritual travel services for devotees and pilgrims.",
-                "Hassle-free arrangements from departure to destination."
-            ]
-        },
-        {
-            icon: <Mic size={24} />,
-            title: "Visiting Faculty & Corporate Training",
-            features: [
-                "Expert faculty for academic institutions and corporate training programs.",
-                "Industry-focused insights to enhance learning and professional growth."
-            ]
-        }
-    ];
 
     return (
         <section id="about" style={{ padding: '40px 0', background: '#f8fbff' }}>
@@ -174,6 +74,10 @@ const About = () => {
                                 <li style={{ display: 'flex', gap: '12px', fontSize: '0.95rem' }}>
                                     <CheckCircle2 size={18} style={{ color: 'var(--primary-orange)', flexShrink: 0 }} />
                                     <span><strong>PhD</strong> in Construction Supply Chain Management</span>
+                                </li>
+                                <li style={{ display: 'flex', gap: '12px', fontSize: '0.95rem' }}>
+                                    <CheckCircle2 size={18} style={{ color: 'var(--primary-orange)', flexShrink: 0 }} />
+                                    <span><strong>Hony Professor of Practice</strong></span>
                                 </li>
                                 <li style={{ display: 'flex', gap: '12px', fontSize: '0.95rem' }}>
                                     <CheckCircle2 size={18} style={{ color: 'var(--primary-orange)', flexShrink: 0 }} />
@@ -463,66 +367,7 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Service Excellence Section */}
-                <div style={{ marginTop: '40px' }}>
-                    <h3 className="hero-title" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', marginBottom: '40px' }}>
-                        Our Service Excellence
-                    </h3>
 
-                    <div className="grid grid-3" style={{ gap: '30px' }}>
-                        {serviceExcellence.map((service, index) => (
-                            <div key={index} className="reveal active" style={{
-                                background: '#fff',
-                                borderRadius: '25px',
-                                padding: '25px',
-                                textAlign: 'left',
-                                boxShadow: '0 15px 35px rgba(0,0,0,0.05)',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '15px',
-                                height: '100%'
-                            }}>
-                                {/* Icon Container */}
-                                <div style={{
-                                    width: '50px',
-                                    height: '50px',
-                                    backgroundColor: 'var(--dark-blue)',
-                                    color: 'white',
-                                    borderRadius: '12px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    flexShrink: 0
-                                }}>
-                                    {service.icon}
-                                </div>
-
-                                {/* Title */}
-                                <h4 className="font-serif" style={{
-                                    fontSize: '1.25rem',
-                                    color: 'var(--dark-blue)',
-                                    lineHeight: '1.3',
-                                    fontWeight: '800',
-                                    minHeight: '3.4rem'
-                                }}>
-                                    {service.title}
-                                </h4>
-
-                                {/* Features List */}
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                                    {service.features.map((feature, fIndex) => (
-                                        <div key={fIndex} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                                            <CheckCircle2 size={18} style={{ color: 'var(--primary-orange)', flexShrink: 0, marginTop: '2px' }} />
-                                            <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: '1.4' }}>
-                                                {feature}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
 
                 {/* CTA Banner */}
                 <div className="reveal active" style={{

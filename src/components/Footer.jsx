@@ -45,7 +45,7 @@ const Footer = () => {
                             <li><a href="#about" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>About Us</a></li>
                             <li><a href="#services" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Our Services</a></li>
                             <li><a href="#media" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Media & Resources</a></li>
-                            <li><a href="#payment" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Book Consultation</a></li>
+
                             <li><a href="#enquiry" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '0.95rem', transition: '0.3s' }} onMouseOver={(e) => e.target.style.opacity = 1} onMouseOut={(e) => e.target.style.opacity = 0.7}>Contact</a></li>
                         </ul>
                     </div>

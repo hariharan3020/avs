@@ -26,13 +26,8 @@ const Hero = () => {
                             textTransform: 'uppercase',
                             letterSpacing: 'clamp(1px, 0.5vw, 3px)'
                         }}>"THE BUSINESS DOCTOR"</p>
-                        <h2 className="hero-credentials" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.2rem)', marginBottom: '10px', marginTop: '0' }}>
-                            PhD., MBA., MA., MPhil, SMP from IIMC, PGDMM
-                        </h2>
                         <p className="hero-description" style={{ fontSize: 'clamp(0.8rem, 2vw, 0.9rem)', marginBottom: '15px', lineHeight: '1.5' }}>
-                            (Professor of Practice, Writer, Author Business Coach, Mentor SME/Family Business,
-                            Commercial Leadership Construction / CE Industry Life Fellow IIMM; Life Member AIMA & MMA,
-                            Institute of Rail Transport, Institute of Supply Management Former Member MRICS, CILT)
+                            "Hony Professor of Practice  I  Author  I  Business Coach  I  Mentor SME / Family Businesses"
                         </p>
 
                         <div className="floating-contact">

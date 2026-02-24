@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Payment from './components/Payment';
+
 import Testimonials from './components/Testimonials';
 import Enquiry from './components/Enquiry';
 import Footer from './components/Footer';
@@ -34,10 +34,10 @@ function App() {
             <Navbar />
             <main>
                 <Hero />
-                <About />
                 <Services />
+                <About />
                 <MediaAndPanels />
-                <Payment />
+
                 <Testimonials />
                 <Enquiry />
             </main>
